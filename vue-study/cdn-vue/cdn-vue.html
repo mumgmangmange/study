@@ -1,0 +1,16 @@
+<body>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script> <!--vue 사용 가능 (라이러리 불러옴)-->
+    <div id="app">{{message}}</div> <!-- 정의된 data 사용 가능 -->
+    <script>
+        const { createApp } = Vue; //createApp() 함수를 비구조화 할당으로 변수 할당 
+        createApp({ // 어플리케이션 인스턴스 생성 
+            data() {
+                return {
+                    message: "Hello!!!!!"
+                };
+            }
+        }).mount("#app"); // DOM 과 연결 (mount)
+    </script>
+</body>
+
+<!-- VSCode 에서 실행 : ALT + L + O --> 
