@@ -3,4 +3,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+//import FirstChild from '@/components/FirstChild.vue';
+
+const app = createApp(App);
+// app.component('FirstChild', FirstChild); // 컴포넌트 추가 
+app.provide('globalMessage', 'hello');
+app.mount('#app');
